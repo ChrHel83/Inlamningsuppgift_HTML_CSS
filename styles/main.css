@@ -80,8 +80,9 @@ header {
     top: 0rem;
     z-index: -50;
 
-    background-color: var(--clr-gray-600);
-    background: linear-gradient(0deg, rgba(99, 101, 241, 0.1) 0%, rgba(219, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+    background-color: var(--clr-primary);
+    background: radial-gradient(circle, rgba(99, 101, 241, 0.0) 0%, rgba(219, 70, 239, 0.15) 100%, rgba(241, 244, 253, 0.07) 95%);
+  
 
     .container {
         margin-top: 5.8rem;
