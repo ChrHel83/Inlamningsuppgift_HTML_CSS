@@ -107,7 +107,6 @@
         position: relative;
         margin-top: 1.5rem;
         .container {
-
             padding-left: 1rem;
             padding-right: 1rem;
             display: flex;
@@ -131,6 +130,60 @@
             a:nth-last-child(1),
             a:nth-last-child(2) {
                 display: none;
+            }
+        }
+    }
+    .features {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+        .H1 {
+          margin-top: 0;
+          padding-top: 0;
+        }
+
+        .content {
+            .cards {
+                grid-template-columns: auto auto;
+                gap: 2rem;
+            }
+            .card {
+                display: grid;
+                grid-template-columns: 25% auto;
+                grid-template-areas: "icon heading" "icon info-text";
+                p {
+                    grid-area: info-text;
+                    text-align: left;
+                    color: #585c7b;
+                    line-height: 25.6px;
+                }
+                .H5 {
+                    grid-area: heading;
+                    font-size: 20px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    padding-bottom: 0.5rem;
+                }
+                .card-icon {
+                    grid-area: icon;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3.75rem;
+                    height: 3.75rem;
+                    background-color: rgba(99, 101, 241, 0.08);
+                    border-radius: 0.5rem;
+                }
             }
         }
     }
@@ -217,34 +270,78 @@
         }
     }
     .logos {
-      position: relative;
-      margin-top: 4rem;
-      .container {
-          margin-top: 0rem;
-          padding-left: 1rem;
-          padding-right: 1rem;
-          display: flex;
-          justify-content: center;
-          gap: 24px;
-          padding-bottom: 1rem;
+        position: relative;
+        margin-top: 4rem;
+        .container {
+            margin-top: 0rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding-bottom: 1rem;
 
-          .logo {
-              padding-inline: auto;
-              padding-block: auto;
-              max-width: 195px;
-              height: 100px;
-              border: 1px solid var(--clr-gray-300);
-              border-radius: 8px;
-              background-color: var(--clr-white);
+            .logo {
+                padding-inline: auto;
+                padding-block: auto;
+                max-width: 195px;
+                height: 100px;
+                border: 1px solid var(--clr-gray-300);
+                border-radius: 8px;
+                background-color: var(--clr-white);
 
-              img {
-                  max-width: 100%;
-              }
-          }
-          a:nth-last-child(1),
-          a:nth-last-child(2) {
-              display: block;
-          }
-      }
-  }
+                img {
+                    max-width: 100%;
+                }
+            }
+            a:nth-last-child(1),
+            a:nth-last-child(2) {
+                display: block;
+            }
+        }
+    }
+    .features {
+        padding-top: 3.5rem;
+        padding-bottom: 2rem;
+
+        .phone-img {
+            display: block;
+            padding-right: 8rem;
+        }
+        .content {
+            .cards {
+                grid-template-columns: auto auto;
+                gap: 2rem;
+            }
+            .card {
+                display: grid;
+                grid-template-columns: 25% auto;
+                grid-template-areas: "icon heading" "icon info-text";
+                p {
+                    grid-area: info-text;
+                    text-align: left;
+                    color: #585c7b;
+                    line-height: 25.6px;
+                }
+                .H5 {
+                    grid-area: heading;
+                    font-size: 20px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    padding-bottom: 0.5rem;
+                }
+                .card-icon {
+                    grid-area: icon;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3.75rem;
+                    height: 3.75rem;
+                    background-color: rgba(99, 101, 241, 0.08);
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
 }

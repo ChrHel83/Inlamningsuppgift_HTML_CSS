@@ -60,6 +60,59 @@
   border-radius: 8px;
   background-color: var(--clr-white);
 }
+.cards {
+  display: grid;
+  grid-template-columns: auto; 
+  gap: 2rem; 
+  padding-inline: 0rem; 
+  padding-top: 2.5rem; 
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 23% auto;
+  grid-template-areas: "icon heading" "icon info-text";
+  /* margin-right: 1.8rem; */
+  p {
+    text-align: left;
+    color: #585C7B;
+    line-height: 25.6px;
+  }
+}
+.H5 {
+  grid-area: heading;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.H1 {
+  text-align: center;
+}
+.card-icon {
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: rgba(99, 101, 241, 0.08);
+  border-radius: 0.5rem;
+}
+.phone-img {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  p .txt-l{
+    text-align: center;
+  }
+}
+
 /* #endregion UTILITIES */
 
 
@@ -130,4 +183,12 @@ header {
     display: none;
 }
 
+}
+
+.features {
+  .content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
