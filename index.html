@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silicon | Inlämningsuppift 1</title>
-  <link rel="stylesheet" href="./styles/root.css">
-  <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="main-logo"><img src="./images/silicon_logo.svg" alt="Silicon Logo"></div>
-    </div>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Silicon | Inlämningsuppift 1</title>
+        <script src="https://kit.fontawesome.com/89a3bffe4e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/root.css" />
+        <link rel="stylesheet" href="./styles/base.css" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="stylesheet" href="./styles/media.css" />
+    </head>
+    <body>
+        <!-- SKIP-LINK -->
+        <header>
+            <div class="container">
+                <a href="index.html" class="main-logo"><img src="./images/silicon_logo.svg" alt="Silicon Logo" /></a>
 
+                <nav class="navbar">
+                    <a href="index.html" class="navbar-link txt-navigation">Features</a>
+                </nav>
 
-  
-</body>
+                <div class="darkmode-switch">
+                    <span class="label">Dark Mode</span>
+                    <label for="darkmode-switch" class="switch">
+                        <input type="checkbox" id="darkmode-switch" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <a href="#" class="btn-primary" id="btn-signin">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Sign in / up</span>
+                </a>
+
+                <div class="mobile-menu-css">
+                    <div class="mobile-menu-bar"></div>
+                    <div class="mobile-menu-bar"></div>
+                    <div class="mobile-menu-bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1 class="heading D4">Manage All Your Money in One App</h1>
+
+                    <div class="content">
+                        <p class="txt-l">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+
+                        <div class="download-buttons">
+                          <a href="#" class="btn-download"><img src="images/btn-appstore.svg" alt="Appstore Download" target="_blank"></a>
+                          <a href="#" class="btn-download"><img src="images/btn-googleplay.svg" alt="Googleplay Download" target="_blank"></a>
+                        </div>
+                        <div class="discover-more">
+                          <a href="#">
+                          <div class="btn-round">
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </div>
+                        </a>
+                          <span>Discover more</span>
+                        </div>
+                    </div>
+                    <div class="phone-images">
+                      <img class="img-back" src="images/iPhone-back.png" alt="iPhone with chart">
+                      <img class="img-front" src="images/iPhone-front.png" alt="iPhone with card">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

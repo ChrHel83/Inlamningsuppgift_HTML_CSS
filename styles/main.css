@@ -1,0 +1,90 @@
+/* #region UTILITIES */
+.navbar {
+    display: none;
+}
+
+.mobile-menu-css {
+    width: 30px;
+    height: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75rem;
+
+    .mobile-menu-bar {
+        border: 0;
+        background-color: #000;
+        width: 22px;
+        height: 2px;
+    }
+}
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.discover-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--clr-gray-700);
+    span {
+        font-size: 14px;
+        line-height: 22.4px;
+        color: var(--clr-gray-700);
+    }
+}
+.phone-images {
+    display: none;
+}
+/* #endregion UTILITIES */
+
+.container {
+    border: 1px solid;
+    width: 100%;
+    max-width: 576px;
+    margin-inline: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+header {
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 2rem;
+        align-items: center;
+        justify-items: right;
+    }
+}
+.hero {
+    background: rgb(99, 102, 241);
+    /* background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%); */
+    background: linear-gradient(0deg, rgba(99, 102, 241, 0.4) 80%, rgba(218, 70, 239, 0.80) 80%, rgba(28, 68, 189, 0.8) 95%);
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        gap: 1rem;
+        align-items: center;
+        padding-bottom: 0rem;
+    }
+    .content {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .heading {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
