@@ -2,3 +2,6 @@
 
 # Skugga bakom telefonen i HERO-sektionen. Är en telefon egentligen två bilder?
   En bild med "display" och en med ram/skal som bakgrund
+
+# Responsivitet och darkmode-switch fungerar inte på iPad:en. Gammal iPad med
+  kanske gammal Safari-läsare
