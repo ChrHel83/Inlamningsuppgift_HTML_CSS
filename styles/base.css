@@ -1,0 +1,274 @@
+/* #region LINKS */
+a {
+  text-decoration: none;
+  display: inline-flex;;
+
+  &:hover {
+      color: var(--clr-gray-600);
+  }
+}
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-gray-800);
+}
+
+.disc-more {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+/*  #endregion LINKS */
+/* #region BUTTONS */
+.btn-primary {
+  display: none;
+  color: #fff;
+  height: 2.25rem;
+  width: 8.75rem;
+  background-color: var(--clr-primary);
+  border-radius: 8px;
+  padding: 0.6em 1em;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  span {
+      font-size: 0.875rem;
+      font-weight: 600;
+  }
+
+  &:hover {
+      background-color: var(--clr-gray-100);
+      color: var(--clr-primary);
+      text-decoration: none;
+      border: 1px solid var(--clr-primary)
+  }
+}
+.mobile-menu {
+  display: flex;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-download {
+  color: #fff;
+  background-color: var(--clr-gray-900);
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+      background-color: var(--clr-gray-600);
+      color: var(--clr-primary);
+      text-decoration: none;
+      border: 1px solid var(--clr-gray-600)
+  }
+
+  .btn-appstore, .btn-googleplay {
+      display: inline-flex;
+  }
+}
+
+/* .btn-download {
+  background-color: var(--clr-gray-900);
+  border-radius: 0.5rem;
+  padding: .6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .btn-appstore, .btn-googleplay {
+
+  }
+} */
+
+.btn-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-gray-600);
+
+  &:hover {
+      background-color: var(--clr-gray-100);
+  }
+
+}
+/* #endregion BUTTONS */
+/* #region DARKMODE-SWITCH */
+/* DARKMODE-SWITCH MED INSPIRATION FR W3School */
+.darkmode-switch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .label {
+      display: none;
+  }
+
+  .switch {
+      position: relative;
+      display: inline-flex;
+      --w: 46px;
+      --h: 24px;
+      width: var(--w);
+      height: var(--h);
+  }
+
+  input {
+      opacity: 0;
+      width: 0px;
+      height: 0px;
+  }
+  .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--clr-gray-600);
+      transition: 400ms;
+      box-shadow: 0px 8px 18px -8px rgba(99, 101, 241, 0.9);
+  }
+  .slider::before {
+      position: absolute;
+      content: "";
+      height: calc(var(--h) - 4px);
+      aspect-ratio: 1;
+      left: 2px;
+      bottom: 2px;
+      background-color: #fff;
+      transition: 400ms;
+  }
+  input:checked + .slider {
+      background-color: var(--clr-primary);
+      box-shadow: 0px 8px 18px -8px rgba(99, 101, 241, 0.9);
+  }
+  input:checked + .slider::before {
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+  }
+
+  .slider.round {
+      border-radius: 23px;
+  }
+  .slider.round:before {
+      border-radius: 50%;
+  }
+}
+
+/* #endregion DARKMODE-SWITCH */
+
+/* FONT-STYLES START */
+
+/* #region Display-fonts */
+.D1 {
+  font-size: 5rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.D2 {
+  font-size: 4.5rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.D3 {
+  font-size: 4rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.D4 {
+  font-size: 3.5rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.D5 {
+  font-size: 3rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.D6 {
+  font-size: 2.625rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+/* #endregion */
+/* #region Heaading */
+.H1 {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.H2 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.H3 {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.3;
+}
+.H4 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.4;
+}
+.H5 {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.4;
+}
+.H6 {
+  font-size: 1rem;
+  font-weight: var(--font-weight-extrabold);
+  color: var(--clr-gray-900);
+  line-height: 1.4;
+}
+/* #endregion */
+/* #region Textstyles */
+.txt-navigation {
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.6;
+  color: var(--clr-gray-800);
+}
+.txt-body {
+  font-size: 1rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--clr-gray-600);
+}
+.txt-bd-lead {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--clr-gray-700);
+}
+/* #endregion */
+
+/* FONT-STYLES END */
