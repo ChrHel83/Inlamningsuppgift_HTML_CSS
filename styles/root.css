@@ -3,6 +3,7 @@
 :root {
     /* Standardfärger */
     --clr-primary: #6366f1;
+    --clr-white: #FFF;
 
     --clr-gray-100: #f3f6ff;
     --clr-gray-200: #eff2fc;
