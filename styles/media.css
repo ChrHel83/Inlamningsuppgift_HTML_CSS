@@ -1,7 +1,7 @@
 @media (min-width: 410px) {
-  .container {
-      max-width: 390px;
-  }
+    .container {
+        max-width: 390px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -20,6 +20,87 @@
 
         .darkmode-switch .label {
             display: inline-flex;
+        }
+    }
+    .hero {
+        .container {
+            margin-top: 6.8rem;
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-template-areas: "heading heading" "content images";
+            gap: 0;
+        }
+        .content {
+            grid-area: content;
+            grid-template-rows: auto auto auto;
+            width: 100%;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            margin-right: 2rem;
+            overflow: hidden;
+        }
+        .heading {
+            grid-area: heading;
+            justify-self: center;
+            width: 70%;
+            margin-bottom: 0;
+        }
+        .D4 {
+            font-size: 44px;
+        }
+        .description-txt {
+            padding-top: 2rem;
+        }
+        p {
+            display: block;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .download-buttons {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            max-width: 270px;
+            gap: 1rem;
+        }
+        .btn-appstore,
+        .btn-googleplay {
+            display: inline-flex;
+        }
+        .btn-download-icon {
+            max-width: 85%;
+        }
+        .phone-images {
+            grid-area: images;
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: hidden;
+        }
+        .img-back {
+            position: absolute;
+            height: auto;
+            max-width: 210px;
+            bottom: 0rem;
+            right: 7.5rem;
+            z-index: -10;
+            width: 100%;
+            /* box-shadow: 10px 40px 40px 25px #000; */
+        }
+        .img-front {
+            position: absolute;
+            height: auto;
+            max-width: 210px;
+            bottom: 0;
+            right: 0;
+            z-index: -5;
+            width: 100%;
+        }
+        .discover-more {
+            justify-content: left;
+            gap: 1rem;
+            color: var(--clr-gray-700);
         }
     }
 }

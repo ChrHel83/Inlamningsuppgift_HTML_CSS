@@ -67,7 +67,7 @@ a {
   border-radius: 8px;
   padding: 0.5rem 1.5rem;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
@@ -80,7 +80,7 @@ a {
   }
 
   .btn-appstore, .btn-googleplay {
-      display: inline-flex;
+      display: block;
   }
 }
 
@@ -104,7 +104,8 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid var(--clr-gray-600);
+  background-color: #fff;
+  /* border: 1px solid var(--clr-gray-600); */
 
   &:hover {
       background-color: var(--clr-gray-100);
@@ -278,6 +279,12 @@ a {
   font-size: 18px;
   color: var(--clr-gray-700);
   line-height: 1.6;
+}
+.description-txt {
+  text-align: center;
+  p {
+    display: inline;
+  }
 }
 .txt-s {
   font-size: 0.875rem;
