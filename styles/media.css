@@ -145,10 +145,13 @@
             gap: 24px;
             padding-bottom: 1rem;
             text-align: center;
+
+
         }
+
         .H1 {
-          margin-top: 0;
-          padding-top: 0;
+            margin-top: 0;
+            padding-top: 0;
         }
 
         .content {
@@ -186,6 +189,59 @@
                 }
             }
         }
+    }
+    .howdoesitwork {
+      background-color: var(--clr-gray-100);
+      padding-bottom: 2rem;
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .vp-mobile {
+          display: none;
+        }    
+        .vp-tablet {
+          display: block;
+        }
+        .vp-desktop {
+          display: none;
+        }
+      }
+      .H1 {
+        font-size: 34px;
+        line-height: 44px;
+        padding-block: 2rem;
+      }
+      .left-phone, .right-phone {
+        display: block;
+      }
+      .phone-images-flow {
+        img {
+            width: 203px;
+        }    
+        display: grid;
+        grid-template-columns: auto auto auto;
+        flex-shrink: auto auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+      .H4 {
+        margin: 0;
+        margin-inline: 7rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 22.7px;
+        line-height: 31.8px;
+      }
+      .txt-m {
+        font-size: 16px;
+        line-height: 25.6px;
+        margin-inline: 7rem;
+      }
+      span {
+        margin: 0;
+      }
+    
     }
 }
 
@@ -343,5 +399,43 @@
                 }
             }
         }
+    }
+    .howdoesitwork {
+      background-color: var(--clr-gray-100);
+      padding-bottom: 3rem;
+      .container {
+        .vp-mobile {
+          display: none;
+        }    
+        .vp-tablet {
+          display: none;
+        }
+        .vp-desktop {
+          display: block;
+        }
+      }
+      .H1 {
+        font-size: 40px;
+        line-height: 1.3px;
+        padding-block: 2.5rem;
+      }
+      .phone-images-flow {
+        img {
+            width: 328px;
+        }  
+        gap: 5rem; 
+    }
+      .H4 {
+        margin: 0;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 24px;
+        line-height: 1.4;
+      }
+      .txt-m {
+        font-size: 16px;
+        line-height: 25.6px;
+        margin-inline: 20rem;
+      }    
     }
 }

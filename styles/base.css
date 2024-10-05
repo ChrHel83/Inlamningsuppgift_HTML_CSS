@@ -245,10 +245,10 @@ a {
   line-height: 1.3;
 }
 .H4 {
-  font-size: 1.5rem;
+  font-size: 21.6px;
   font-weight: var(--font-weight-extrabold);
   color: var(--clr-gray-900);
-  line-height: 1.4;
+  line-height: 30.2px;
 }
 .H5 {
   font-size: 20px;
@@ -281,16 +281,21 @@ a {
   color: var(--clr-gray-700);
   line-height: 1.6;
 }
-.description-txt {
-  text-align: center;
-  p {
-    display: inline;
-  }
+.txt-m {
+  font-size: 16px;
+  color: var(--clr-gray-700);
+  line-height: 25.6px;
 }
 .txt-s {
   font-size: 0.875rem;
   color: var(--clr-gray-700);
   line-height: 1.6;
+}
+.description-txt {
+  text-align: center;
+  p {
+    display: inline;
+  }
 }
 .txt-bd-lead {
   font-size: 1.5rem;
