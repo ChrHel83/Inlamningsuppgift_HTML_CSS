@@ -34,3 +34,9 @@ body, header, nav, main, div, section, span, p {
     padding: 0;
     font-family: "Manrope", sans-serif;
 }
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+

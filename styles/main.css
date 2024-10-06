@@ -1,4 +1,8 @@
 /* #region UTILITIES */
+main {
+    /* display: none; */
+}
+
 .navbar {
     display: none;
 }
@@ -73,7 +77,6 @@
     display: grid;
     grid-template-columns: 23% auto;
     grid-template-areas: "icon heading" "icon info-text";
-    /* margin-right: 1.8rem; */
     p {
         text-align: left;
         color: #585c7b;
@@ -538,7 +541,7 @@ header {
 }
 .notification {
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
 
     .container {
         padding-top: 3rem;
@@ -556,29 +559,23 @@ header {
         .notification-icon {
             grid-area: image;
         }
-        .mobile {
-            display: block;
-        }
-        .tablet {
-            display: none;
-        }
-        .desktop {
+        #desktop-only {
             display: none;
         }
         .heading {
-          grid-area: heading;
+            grid-area: heading;
             display: flex;
             flex-direction: column;
             h3 {
-              font-size: 21.6px;
+                font-size: 21.6px;
                 margin: 0;
                 font-size: 1.5rem;
             }
         }
 
         .subscribe-form {
-          grid-area: form;
-          padding-top: 1.5rem;
+            grid-area: form;
+            padding-top: 1.5rem;
             display: flex;
             position: relative;
 
@@ -611,5 +608,12 @@ header {
                 left: 0.8rem;
             }
         }
+    }
+}
+footer {
+    .container {
+        text-align: center;
+        font-size: 14px;
+        color: var(--clr-gray-600);
     }
 }
