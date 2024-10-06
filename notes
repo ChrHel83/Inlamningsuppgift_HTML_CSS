@@ -11,3 +11,7 @@
  # Utveckla sektionen med FAQ så att man får fram text om man klickar på knapparna.
 
  # Fel ordning på elementen i tabletversionen. Använd grip-areas för att flytta dem till rätt ställe
+
+ # Kontrollera koden avseende aria och semantics
+
+ # Strukturera om css-koderna
