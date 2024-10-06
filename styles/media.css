@@ -423,7 +423,7 @@
         img {
             width: 328px;
         }  
-        gap: 5rem; 
+        gap: 6rem; 
     }
       .H4 {
         margin: 0;
@@ -438,4 +438,8 @@
         margin-inline: 20rem;
       }    
     }
+    .feature-trans-receive {
+      display: block;
+    }
+
 }
