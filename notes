@@ -6,4 +6,8 @@
 # Responsivitet och darkmode-switch fungerar inte på iPad:en. Gammal iPad med
   kanske gammal Safari-läsare
 
-  # Bakgrunden ser olika ut på olika skärmar... Kanske prova att justera siffrorna för stop och o.
+ # Bakgrunden ser olika ut på olika skärmar... Kanske prova att justera siffrorna för stop och o.
+
+ # Utveckla sektionen med FAQ så att man får fram text om man klickar på knapparna.
+
+ # Fel ordning på elementen i tabletversionen. Använd grip-areas för att flytta dem till rätt ställe
